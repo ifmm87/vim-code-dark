@@ -126,9 +126,9 @@ endif
 
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
-let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
+let s:cdBlue = {'gui': '#1496BB', 'cterm': s:cterm0D, 'cterm256': '75'}
 let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
-let s:cdLightBlue = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
+let s:cdLightBlue = {'gui': '#1287A8', 'cterm': s:cterm0C, 'cterm256': '117'}
 if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdGreen = {'gui': '#6A9955', 'cterm': s:cterm0B, 'cterm256': '65'}
 let s:cdBlueGreen = {'gui': '#4EC9B0', 'cterm': s:cterm0F, 'cterm256': '43'}
@@ -202,7 +202,7 @@ call <sid>hi('Number', s:cdLightGreen, {}, 'none', {})
 call <sid>hi('Boolean', s:cdBlue, {}, 'none', {})
 call <sid>hi('Float', s:cdLightGreen, {}, 'none', {})
 
-call <sid>hi('Identifier', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('Identifier', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('Function', s:cdYellow, {}, 'none', {})
 
 call <sid>hi('Statement', s:cdPink, {}, 'none', {})
@@ -210,7 +210,7 @@ call <sid>hi('Conditional', s:cdPink, {}, 'none', {})
 call <sid>hi('Repeat', s:cdPink, {}, 'none', {})
 call <sid>hi('Label', s:cdPink, {}, 'none', {})
 call <sid>hi('Operator', s:cdFront, {}, 'none', {})
-call <sid>hi('Keyword', s:cdPink, {}, 'none', {})
+call <sid>hi('Keyword', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('Exception', s:cdPink, {}, 'none', {})
 
 call <sid>hi('PreProc', s:cdPink, {}, 'none', {})
@@ -410,7 +410,7 @@ call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsFuncBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
-call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsThis', s:cdPink, {}, 'none', {})
 call <sid>hi('jsOperatorKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsDestructuringBlock', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('jsObjectKey', s:cdLightBlue, {}, 'none', {})
@@ -440,8 +440,8 @@ call <sid>hi('typescriptDocComment', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('typescriptLogicSymbols', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('typescriptImport', s:cdPink, {}, 'none', {})
 call <sid>hi('typescriptBOM', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('typescriptVariableDeclaration', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('typescriptVariable', s:cdBlue, {}, 'none', {})
+call <sid>hi('typescriptVariableDeclaration', s:cdPink, {}, 'none', {})
+call <sid>hi('typescriptVariable', s:cdLightRed, {}, 'none', {})
 call <sid>hi('typescriptExport', s:cdPink, {}, 'none', {})
 call <sid>hi('typescriptAliasDeclaration', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('typescriptAliasKeyword', s:cdBlue, {}, 'none', {})
@@ -491,10 +491,11 @@ call <sid>hi('typescriptInterfaceName', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('typescriptInterfaceKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('typescriptInterfaceExtends', s:cdBlue, {}, 'none', {})
 call <sid>hi('typescriptGlobal', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('typescriptAsyncFuncKeyword', s:cdBlue, {}, 'none', {})
+call <sid>hi('typescriptAsyncFuncKeyword', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('typescriptFuncKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hi('typescriptGlobalMethod', s:cdYellow, {}, 'none', {})
 call <sid>hi('typescriptPromiseMethod', s:cdYellow, {}, 'none', {})
+call <sid>hi('typescriptThis', s:cdYellow, {}, 'none', {})
 
 " XML:
 call <sid>hi('xmlTag', s:cdBlueGreen, {}, 'none', {})
